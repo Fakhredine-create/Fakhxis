@@ -1,5 +1,14 @@
 body{
     margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* ARTICLE */
+
+#article{
+    background-image: url(img/fonds_gris_detourercom_036_chrom.jpg.crdownload);
+    background-size: cover;
+    background-position: center;
 }
 
 /* TITRE */
@@ -7,19 +16,22 @@ body{
 .titre{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .titre p{
     margin-bottom: 5%;
+    width: 80%;
 }
 
 /* CARTES */
 
 .containers{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    padding-bottom: 15%;
 }
 
 .container{
@@ -33,10 +45,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff;
+    background: rgb(255, 255, 255);
     width: 400px;
     border: 2px solid gray;
-    box-shadow: gray;
+    box-shadow: 2px 2px 5px black;
 }
 
 .up img{
@@ -48,7 +60,7 @@ body{
     padding-bottom: 50px;
 }
 
-.down h1{
+.down h2{
     display: flex;
     justify-content: center;
 }
@@ -58,3 +70,13 @@ body{
     text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+    .containers {
+        display: flex;
+        flex-direction: column;
+  }
+
+  .carte {
+      margin-bottom: 15px;
+  }
+}
